@@ -303,6 +303,7 @@ groups:
     options:
       rank: '350'
     permissions:
+    - taien.th.admin
     - essentials.gamemode.others
     - essentials.banip.*
     - lwc.admin
