@@ -1,4 +1,6 @@
 # Here are all ranks and perms that i have right now they are not tidy up so its bit hard to read but :D yolo.
+# !!!!!!!!!!!! NOTE !!!!!!!!!!
+# when editing always make sure that perms works with checking here http://yaml-online-parser.appspot.com/
 groups:
 #default rank
   Builder:
