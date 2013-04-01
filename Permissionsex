@@ -291,6 +291,7 @@ groups:
     options:
       rank: '350'
     permissions:
+    - essentials.banip.*
     - lwc.admin
     - chestkeeper.use.anyone
     - chestkeeper.sign.upgrade
@@ -340,9 +341,7 @@ groups:
     options:
       rank: '300'
     permissions:
-    - essentials.god.*
-    - essentials.heal.*
-    - essentials.ptime.*
+    - essentials.*
     - mobarena.setup
     - spawner.give.others.*
     inheritance:
