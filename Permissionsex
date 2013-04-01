@@ -277,16 +277,10 @@ groups:
     - essentials.clearinventory.*
     - essentials.back.ondeath
     - essentials.tptoggle.*
-    - limitedcreative.command
-    - limitedcreative.switch_gamemode.*
-    - limitedcreative.nolimit.mob_damage
-    - limitedcreative.nolimit.interact
-    - limitedcreative.nolimit.use
-    - limitedcreative.nolimit.break
-    - kitmaster.*
     - mobarena.admin
     - worldedit.*
     - essentials.nick.others
+    - essentials.gamemode
     inheritance:
     - Mod
   Dev:
@@ -294,7 +288,7 @@ groups:
     options:
       rank: '450'
     permissions:
-    - -limitedcreative.*
+    - mcmmo.tools.updatecheck
     - chestkeeper.updates
     inheritance:
     - HeadMod
@@ -309,6 +303,7 @@ groups:
     options:
       rank: '350'
     permissions:
+    - essentials.gamemode.others
     - essentials.banip.*
     - lwc.admin
     - chestkeeper.use.anyone
