@@ -7,6 +7,22 @@ groups:
     options:
       rank: '1000'
     permissions:
+    - mcmmo.perks.activationtime.twelveseconds
+    - mcmmo.perks.cooldowns.thirded
+    - mcmmo.perks.lucky.acrobatics
+    - mcmmo.perks.lucky.archery
+    - mcmmo.perks.lucky.axes
+    - mcmmo.perks.lucky.excavation
+    - mcmmo.perks.lucky.fishing
+    - mcmmo.perks.lucky.herbalism
+    - mcmmo.perks.lucky.mining
+    - mcmmo.perks.lucky.repair
+    - mcmmo.perks.lucky.smelting
+    - mcmmo.perks.lucky.swords
+    - mcmmo.perks.lucky.taming
+    - mcmmo.perks.lucky.unarmed
+    - mcmmo.perks.lucky.woodcutting
+    - mcmmo.perks.xp.double
     - towny.command.plot.claim
     - towny.command.plot.unclaim
     - towny.command.plot.forsale
