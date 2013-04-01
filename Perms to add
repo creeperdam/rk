@@ -1,1 +1,21 @@
 #tj and noah write wut we are missing and write for every rank wut we gota add or change plz
+
+
+mcmmo.perks.activationtime.twelveseconds true
+mcmmo.perks.cooldowns.thirded true
+mcmmo.perks.lucky.acrobatics true
+mcmmo.perks.lucky.archery true
+mcmmo.perks.lucky.axes true
+mcmmo.perks.lucky.excavation true
+mcmmo.perks.lucky.fishing true
+mcmmo.perks.lucky.herbalism true
+mcmmo.perks.lucky.mining true
+mcmmo.perks.lucky.repair true
+mcmmo.perks.lucky.smelting true
+mcmmo.perks.lucky.swords true
+mcmmo.perks.lucky.taming true
+mcmmo.perks.lucky.unarmed true
+mcmmo.perks.lucky.woodcutting true
+mcmmo.perks.xp.double true
+
+mcmmo.tools.updatecheck Dev
