@@ -175,7 +175,7 @@ groups:
     permissions:
     - sw.warn
     - sw.check.other
-    - -essentials.god
+    - essentials.god
     - essentials.helpop.receive
     - essentials.chat.*
     - essentials.msg.*
@@ -184,7 +184,6 @@ groups:
     - essentials.recipe
     - essentials.geoip.show
     - essentials.ban.*
-    - essentials.banip
     - essentials.deljail
     - essentials.jails
     - essentials.kick.*
