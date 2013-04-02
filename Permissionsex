@@ -282,7 +282,7 @@ groups:
     inheritance:
     - Mod
   Dev:
-    prefix: '&e[&7Dev&e] '
+    prefix: '&6[&7Dev&6] '
     options:
       rank: '450'
     permissions:
