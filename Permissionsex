@@ -154,7 +154,6 @@ groups:
     options:
       rank: '800'
     permissions:
-    - essentials.speed
     - essentials.spawnmob.*
     - essentials.spawnmob
     inheritance:
@@ -174,7 +173,6 @@ groups:
     permissions:
     - essentials.chat.color
     - colors.show
-    - colors.chat
     - colors.sign
     inheritance:
     - Commander
@@ -212,7 +210,6 @@ groups:
     - essentials.jail.*
     - essentials.spawnmob.*
     - essentials.tempban.*
-    - essentials.keepxp
     - essentials.tp.*
     - essentials.tphere
     - disguisecraft.*
@@ -305,6 +302,7 @@ groups:
       rank: '350'
     permissions:
     - taien.th.admin
+    - colors.chat
     - essentials.gamemode.others
     - essentials.banip.*
     - lwc.admin
@@ -349,6 +347,8 @@ groups:
     - arena.admin
     - announcer.admin
     - ultimatearena.admin
+    - essentials.speed
+    - essentials.keepxp
     inheritance:
     - HeadDev
   HeadAdmin:
