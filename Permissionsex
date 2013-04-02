@@ -101,7 +101,7 @@ groups:
     - -lwc.protect
 #donator ranks
   Premium:
-    prefix: '&4[&cPremium&4] '
+    prefix: '&4[&aPremium&4] '
     options:
       rank: '950'
     permissions:
@@ -124,7 +124,7 @@ groups:
     inheritance:
     - Builder
   VIP:
-    prefix: '&2[&aVIP&2] '
+    prefix: '&2[&bVIP&2] '
     options: rank:'900'
     permissions:
     - essentials.worth
