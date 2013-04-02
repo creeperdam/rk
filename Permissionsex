@@ -289,7 +289,7 @@ groups:
     inheritance:
     - HeadMod
   HeadDev:
-    prefix: '&e[&2Head Dev&e] '
+    prefix: '&6[&8Head Dev&6] '
     options:
       rank: '400'
     inheritance:
