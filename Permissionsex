@@ -1,4 +1,4 @@
-# So I'm going to try to make some prefixes look better rather then just regular which is black I believe
+# Add the prefixes so the have colors :D
 # Here are all ranks and perms that i have right now they are not tidy up so its bit hard to read but :D yolo.
 # !!!!!!!!!!!! NOTE !!!!!!!!!!
 # when editing always make sure that perms works with checking here http://yaml-online-parser.appspot.com/
@@ -101,7 +101,7 @@ groups:
     - -lwc.protect
 #donator ranks
   Premium:
-    prefix: '[Premium] '
+    prefix: '&4[&cPremium&4] '
     options:
       rank: '950'
     permissions:
@@ -124,7 +124,7 @@ groups:
     inheritance:
     - Builder
   VIP:
-    prefix: '[VIP] '
+    prefix: '&2[&aVIP&2] '
     options: rank:'900'
     permissions:
     - essentials.worth
@@ -141,7 +141,7 @@ groups:
     inheritance:
     - Premium
   Merchant:
-    prefix: '[Merchant] '
+    prefix: '&8[&7Merchant&8] '
     options:
       rank: '850'
     permissions:
@@ -150,7 +150,7 @@ groups:
     inheritance:
     - VIP
   Elite:
-    prefix: '[Elite] '
+    prefix: '&1[&9Elite&1] '
     options:
       rank: '800'
     permissions:
@@ -160,7 +160,7 @@ groups:
     inheritance:
     - Merchant
   Commander:
-    prefix: '[Commander] '
+    prefix: '&7[&8Commander&7] '
     options:
       rank: '750'
     permissions:
@@ -168,7 +168,7 @@ groups:
     inheritance:
     - Elite
   Veteran:
-    prefix: '[Veteran] '
+    prefix: '&b[&3Veteran&b] '
     options:
       rank: '700'
     permissions:
@@ -179,7 +179,7 @@ groups:
     inheritance:
     - Commander
   Watchman:
-    prefix: '[Watchman] '
+    prefix: '&6[&5Watchman&6] '
     options:
       rank: '650'
     permissions:
@@ -188,7 +188,7 @@ groups:
     - Veteran
 #staff ranks
   Policer:
-    prefix: '[Policer] '
+    prefix: '&b[&4Police&b] '
     options:
       rank: '600'
     permissions:
@@ -225,7 +225,7 @@ groups:
     inheritance:
     - Watchman
   Mod:
-    prefix: '[Mod] '
+    prefix: '&7[&3Mod&7] '
     options:
       rank: '550'
     permissions:
@@ -285,7 +285,7 @@ groups:
     inheritance:
     - Mod
   Dev:
-    prefix: '[Dev] '
+    prefix: '&6[&7Dev&6] '
     options:
       rank: '450'
     permissions:
@@ -294,13 +294,13 @@ groups:
     inheritance:
     - HeadMod
   HeadDev:
-    prefix: '[Head Dev] '
+    prefix: '&e[&2Head Dev&e] '
     options:
       rank: '400'
     inheritance:
     - Dev
   Admin:
-    prefix: '[Admin] '
+    prefix: '&1[&7Admin&1] '
     options:
       rank: '350'
     permissions:
@@ -352,7 +352,7 @@ groups:
     inheritance:
     - HeadDev
   HeadAdmin:
-    prefix: '[Head Admin] '
+    prefix: '&4[&6head Admin&4] '
     options:
       rank: '300'
     permissions:
@@ -363,7 +363,7 @@ groups:
     - Admin
 #coowner - owner ranks
   CoOwner:
-    prefix: '[Co Owner] '
+    prefix: '&9[&3Co Owner&9] '
     optoins:
       rank: '250'
     permissions:
