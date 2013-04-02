@@ -264,7 +264,7 @@ groups:
     inheritance:
     - Policer
   HeadMod:
-    prefix: '[Head Mod] '
+    prefix: '&1[&6Head Mod&1] '
     options:
       rank: '500'
     permissions:
