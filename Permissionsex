@@ -186,7 +186,7 @@ groups:
     - Veteran
 #staff ranks
   Policer:
-    prefix: '&b[&4Police&b] '
+    prefix: '&9[P&eo&9licer] '
     options:
       rank: '600'
     permissions:
@@ -222,7 +222,7 @@ groups:
     inheritance:
     - Watchman
   Mod:
-    prefix: '&7[&3Mod&7] '
+    prefix: '&7[M&eo&7d] '
     options:
       rank: '550'
     permissions:
@@ -282,7 +282,7 @@ groups:
     inheritance:
     - Mod
   Dev:
-    prefix: '&6[&7Dev&6] '
+    prefix: '&e[&7Dev&e] '
     options:
       rank: '450'
     permissions:
@@ -297,7 +297,7 @@ groups:
     inheritance:
     - Dev
   Admin:
-    prefix: '&1[&7Admin&1] '
+    prefix: '&6[&4Admin&6] '
     options:
       rank: '350'
     permissions:
@@ -352,7 +352,7 @@ groups:
     inheritance:
     - HeadDev
   HeadAdmin:
-    prefix: '&4[&6head Admin&4] '
+    prefix: '&6[&4head Admin&6] '
     options:
       rank: '300'
     permissions:
