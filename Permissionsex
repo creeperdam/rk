@@ -235,10 +235,8 @@ groups:
     - essentials.nick.color
     - essentials.nick.format
     - essentials.nick.magic
-    - essentials.powertool.*
     - essentials.seen.*
     - essentials.unban
-    - essentials.unbanip
     - sw.delete
     - essentials.invsee.*
     - essentials.enderchest.*
@@ -367,6 +365,8 @@ groups:
     optoins:
       rank: '250'
     permissions:
+    - essentials.unbanip
+    - essentials.powertool.*
     - '*'
     inheritance:
     - HeadAdmin
