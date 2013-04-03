@@ -48,6 +48,7 @@ groups:
     - essentials.helpop
     - essentials.list
     - essentials.motd
+    - essentials.clearinventory.*
     - essentials.rules
     - essentials.spawn
     - essentials.mail
@@ -270,7 +271,6 @@ groups:
     permissions:
     - essentials.give.*
     - essentials.item.*
-    - essentials.clearinventory.*
     - essentials.back.ondeath
     - essentials.tptoggle.*
     - mobarena.admin
