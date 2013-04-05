@@ -128,7 +128,7 @@ groups:
     - essentials.tpaall
     - nightvis.
     - disguisecraft.notarget
-    - disguisecraft.mob.*
+    - disguisecraft.mob.
     - disguisecraft.burning
     - disguisecraft.nopickup
     - disguisecraft.blocklock
@@ -379,9 +379,9 @@ groups:
   Owner:
     prefix: '&9[&3Owner&9]&0 '
     permissions:
-    - -modifyworld.mobtarget.*
+    - -modifyworld.mobtarget.
     - '*'
-    - superlogger.bypass.*
+    - superlogger.bypass.
     options:
       rank: '0'
     inheritance:
