@@ -1,4 +1,4 @@
-#CHANGED IT ALL .* 
+#CHANGED ALL .* TO .ok
 #dont forget to look on that site for perms for essetnials URL = http://wiki.ess3.net/wiki/Command_Reference/Perm
 
 groups:
@@ -39,10 +39,10 @@ groups:
     - spawner.mine
     - towny.command.plot.*
     - essentials.chat
-    - essentials.signs.use.*
+    - essentials.signs.use.ok
     - essentials.chat.url
     - essentials.help
-    - essentials.help.*
+    - essentials.help.ok
     - essentials.helpop
     - essentials.list
     - essentials.motd
@@ -69,7 +69,7 @@ groups:
     - essentials.hat
     - essentials.warp
     - essentials.warp.list
-    - essentials.warps.*
+    - essentials.warps.ok
     - trp.gate.use
     - modifyworld.*
     - iconomy.holdings
@@ -80,7 +80,7 @@ groups:
     - essentials.tpaccept
     - essentials.tpdeny
     - essentials.tpahere
-    - essentials.build.*
+    - essentials.build.ok
     - kitmaster.list
     - plotguardian.claim
     - plotguardian.list
@@ -117,7 +117,6 @@ groups:
     - chestkeeper.sign.break
     - chestkeeper.sign.keeper.place
     - lwc.protect
-    - essentials.tp.*
     inheritance:
     - Builder
   VIP:
@@ -152,7 +151,7 @@ groups:
       rank: '800'
     permissions:
     - essentials.speed
-    - essentials.spawnmob.*
+    - essentials.spawnmob.ok
     - essentials.spawnmob
     inheritance:
     - Merchant
@@ -161,7 +160,7 @@ groups:
     options:
       rank: '750'
     permissions:
-    - essentials.firework.*
+    - essentials.firework.ok
     inheritance:
     - Elite
   Veteran:
@@ -195,27 +194,26 @@ groups:
     - sw.check.other
     - -essentials.god
     - essentials.helpop.receive
-    - essentials.chat.*
-    - essentials.msg.*
+    - essentials.chat.ok
+    - essentials.msg.ok
     - essentials.seen
     - essentials.realname
     - essentials.recipe
     - essentials.geoip.show
-    - essentials.ban.*
-    - essentials.banip
+    - essentials.ban.ok
     - essentials.deljail
     - essentials.jails
-    - essentials.kick.*
-    - essentials.mute.*
+    - essentials.kick.ok
+    - essentials.mute.ok
     - essentials.setjail
     - essentials.socialspy
-    - essentials.jail.*
-    - essentials.spawnmob.*
-    - essentials.tempban.*
+    - essentials.jail.ok
+    - essentials.spawnmob.ok
+    - essentials.tempban.ok
     - essentials.keepxp
-    - essentials.tp.*
+    - essentials.tp.ok
     - essentials.tphere
-    - disguisecraft.*
+    - disguisecraft.ok
     - lockette.*
     - adminchannel.send
     - adminchannel.recieve
@@ -238,25 +236,25 @@ groups:
     - essentials.nick.color
     - essentials.nick.format
     - essentials.nick.magic
-    - essentials.powertool.*
-    - essentials.seen.*
+    - essentials.powertool.ok
+    - essentials.seen.ok
     - essentials.unban
     - essentials.unbanip
     - sw.delete
-    - essentials.invsee.*
-    - essentials.enderchest.*
+    - essentials.invsee.ok
+    - essentials.enderchest.ok
     - essentials.clearinventory.all
     - essentials.clearinventory.others
     - essentials.gc
     - essentials.teleport.hidden
-    - essentials.setwarp.*
-    - essentials.delwarp.*
+    - essentials.setwarp.ok
+    - essentials.delwarp.ok
     - essentials.tppos
-    - essentials.tpo.*
+    - essentials.tpo.ok
     - essentials.tpohere
     - essentials.teleport.hidden
     - essentials.protect.ownerinfo
-    - essentials.signs.*
+    - essentials.signs.ok
     - adminfun.*
     - plotguardian.*
     - buttonteleport.*
@@ -264,7 +262,7 @@ groups:
     - spawner.get
     - spawner.break
     - essentials.spawner
-    - essentials.spawner.*
+    - essentials.spawner.ok
     - residence.admin
     inheritance:
     - Policer
@@ -273,14 +271,15 @@ groups:
     options:
       rank: '500'
     permissions:
+    - essentials.banip
     - essentials.god
     - essentials.god.others
     - essentials.god.pvp
-    - essentials.give.*
-    - essentials.item.*
-    - essentials.clearinventory.*
+    - essentials.give.ok
+    - essentials.item.ok
+    - essentials.clearinventory.ok
     - essentials.back.ondeath
-    - essentials.tptoggle.*
+    - essentials.tptoggle.ok
     - essentials.gamemode
     - mobarena.admin
     - worldedit.*
@@ -333,16 +332,16 @@ groups:
     - towny.wild.*
     - towny.cheat.bypass
     - permissions.*
-    - essentials.exp.*
-    - essentials.feed.*
-    - essentials.fly.*
+    - essentials.exp.ok
+    - essentials.feed.ok
+    - essentials.fly.ok
     - essentials.heal
     - essentials.more
     - essentials.ptime
-    - essentials.speed.*
-    - essentials.unlimited.*
+    - essentials.speed.ok
+    - essentials.unlimited.ok
     - essentials.getpos.others
-    - essentials.togglejail.*
+    - essentials.togglejail.ok
     - limitedcreative.*
     - limitedcreative.keepinventory
     - limitedcreative.nolimit.chest
@@ -361,9 +360,9 @@ groups:
     options:
       rank: '300'
     permissions:
-    - essentials.god.*
-    - essentials.heal.*
-    - essentials.ptime.*
+    - essentials.god.ok
+    - essentials.heal.ok
+    - essentials.ptime.ok
     - mobarena.setup
     - spawner.give.others.*
     inheritance:
@@ -425,4 +424,3 @@ users:
     options:
       group: Dev
     prefix: '&6&o[&7&oDev&6&o] '
-    suffix: ''
