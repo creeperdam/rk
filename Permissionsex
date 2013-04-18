@@ -1,9 +1,4 @@
-# Add the prefixes so the have colors :D
-# Here are all ranks and perms that i have right now they are not tidy up so its bit hard to read but :D yolo.
-# !!!!!!!!!!!! NOTE !!!!!!!!!!
-# when editing always make sure that perms works with checking here http://yaml-online-parser.appspot.com/
 groups:
-#default rank
   Builder:
     default: true
     prefix: '&0[&fBuilder&0] &f'
@@ -41,14 +36,33 @@ groups:
     - spawner.mine
     - towny.command.plot.*
     - essentials.chat
-    - essentials.signs.use.*
+    - essentials.mute.notify
+    - essentials.ban.notify
+    - essentials.kick.notify
+    - essentials.signs.use.balance
+    - essentials.signs.use.buy
+    - essentials.signs.use.disposal
+    - essentials.signs.use.enchant
+    - essentials.signs.use.free
+    - essentials.signs.use.gamemode
+    - essentials.signs.use.heal
+    - essentials.signs.use.info
+    - essentials.signs.use.kit
+    - essentials.signs.use.mail
+    - essentials.signs.use.protection
+    - essentials.signs.use.repair
+    - essentials.signs.use.sell
+    - essentials.signs.use.spawnmob
+    - essentials.signs.use.time
+    - essentials.signs.use.trade
+    - essentials.signs.use.warp
+    - essentials.signs.use.weather
     - essentials.chat.url
     - essentials.help
     - essentials.help.*
     - essentials.helpop
     - essentials.list
     - essentials.motd
-    - essentials.clearinventory.*
     - essentials.rules
     - essentials.spawn
     - essentials.mail
@@ -76,7 +90,6 @@ groups:
     - trp.gate.use
     - modifyworld.*
     - iconomy.holdings
-    - -lift.*
     - -bukkit.command.plugins
     - essentials.itemdb
     - essentials.me
@@ -94,15 +107,18 @@ groups:
     - mobarena.use.spec
     - mobarena.use.arenalist
     - mobarena.use.playerlist
-    - lockette.user.create.*
     - lottery.basic.*
     - buttonteleport.teleport
     - essentials.top
     - lwc.deny
     - -lwc.protect
-#donator ranks
+    - essentials.clearinventory
+    - rtp.use.cmd
+    - rtp.use.sign
+    - randomport.portself
+    - automessage.receive.message-list
   Premium:
-    prefix: '&4[&aPremium&4] '
+    prefix: '&4[&cPremium&4] &c'
     options:
       rank: '950'
     permissions:
@@ -122,10 +138,12 @@ groups:
     - chestkeeper.sign.break
     - chestkeeper.sign.keeper.place
     - lwc.protect
+    - essentials.tp
+    - essentials.tp.others    
     inheritance:
     - Builder
   VIP:
-    prefix: '&2[&bVIP&2] '
+    prefix: '&2[&aVIP&2] &a'
     options: rank:'900'
     permissions:
     - essentials.worth
@@ -142,7 +160,7 @@ groups:
     inheritance:
     - Premium
   Merchant:
-    prefix: '&8[&7Merchant&8] '
+    prefix: '&8[&7Merchant&8] &7'
     options:
       rank: '850'
     permissions:
@@ -151,83 +169,105 @@ groups:
     inheritance:
     - VIP
   Elite:
-    prefix: '&1[&9Elite&1] '
+    prefix: '&1[&9Elite&1] &9'
     options:
       rank: '800'
     permissions:
+    - essentials.speed
     - essentials.spawnmob.*
     - essentials.spawnmob
     inheritance:
     - Merchant
   Commander:
-    prefix: '&7[&8Commander&7] '
+    prefix: '&7[&8Commander&7] &8'
     options:
       rank: '750'
     permissions:
-    - essentials.firework.*
+    - essentials.firework
+    - essentials.firework.fire
+    - randomport.avoidcooldown
     inheritance:
     - Elite
   Veteran:
-    prefix: '&b[&3Veteran&b] '
+    prefix: '&b[&3Veteran&b] &3'
     options:
       rank: '700'
     permissions:
     - essentials.chat.color
     - colors.show
+    - colors.chat
     - colors.sign
     inheritance:
     - Commander
   Watchman:
-    prefix: '&6[&5Watchman&6] '
+    prefix: '&6[&5Watchman&6] &5'
     options:
       rank: '650'
     permissions:
     - essentials.fly.safelogin
     inheritance:
     - Veteran
-#staff ranks
   Policer:
-    prefix: '&9[P&eo&9licer] '
+    prefix: '&b[&4Policer&b] &4'
     options:
       rank: '600'
     permissions:
+    - nocheatplus.bypass.*
+    - nocheatplus.checks.*
+    - nocheatplus.mods.*
     - sw.warn
     - sw.check.other
-    - essentials.god
+    - -essentials.god
     - essentials.helpop.receive
-    - essentials.chat.*
-    - essentials.msg.*
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.chat.ignoreexempt
+    - essentials.chat.magic
+    - essentials.chat.question
+    - essentials.chat.shout
+    - essentials.chat.spy
+    - essentials.chat.url
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.magic
     - essentials.seen
     - essentials.realname
     - essentials.recipe
     - essentials.geoip.show
-    - essentials.ban.*
+    - essentials.ban
+    - essentials.ban.offline
+    - essentials.banip
     - essentials.deljail
     - essentials.jails
-    - essentials.kick.*
-    - essentials.mute.*
+    - essentials.kick
+    - essentials.mute
     - essentials.setjail
     - essentials.socialspy
-    - essentials.jail.*
     - essentials.spawnmob.*
-    - essentials.tempban.*
-    - essentials.tp.*
+    - essentials.tempban
+    - essentials.tempban.offline
+    - essentials.tempban.unlimited
+    - essentials.keepxp
     - essentials.tphere
     - disguisecraft.*
-    - lockette.*
     - adminchannel.send
     - adminchannel.recieve
     - simplefly.nodamage
     - residence.create
+    - essentials.togglejail
     - ultimatearena.builder
     inheritance:
     - Watchman
-  Mod:
-    prefix: '&7[M&eo&7d] '
+  Moder:
+    prefix: '&7[&3M&7o&3d&7] &3'
     options:
       rank: '550'
-    permissions:
+    permissions:    
+    - randomport.portother
+    - randomport.deathport
+    - randomport.netherport
     - lwc.mod
+    - essentials.tpall
     - essentials.depth
     - essentials.compass
     - essentials.getpos
@@ -236,23 +276,64 @@ groups:
     - essentials.nick.color
     - essentials.nick.format
     - essentials.nick.magic
-    - essentials.seen.*
+    - essentials.powertool
+    - essentials.powertool.append
+    - essentials.powertool.powertooltoggle
+    - essentials.seen.banreason
     - essentials.unban
+    - essentials.unbanip
     - sw.delete
-    - essentials.invsee.*
-    - essentials.enderchest.*
+    - essentials.invsee
+    - essentials.invsee.modify
+    - essentials.enderchest
+    - essentials.enderchest.modify
+    - essentials.enderchest.others
     - essentials.clearinventory.all
     - essentials.clearinventory.others
     - essentials.gc
     - essentials.teleport.hidden
-    - essentials.setwarp.*
-    - essentials.delwarp.*
+    - essentials.setwarp
+    - essentials.warp.overwrite.*
+    - essentials.delwarp
     - essentials.tppos
-    - essentials.tpo.*
+    - essentials.tpo
     - essentials.tpohere
     - essentials.teleport.hidden
     - essentials.protect.ownerinfo
-    - essentials.signs.*
+    - essentials.signs.break.balance
+    - essentials.signs.break.buy
+    - essentials.signs.break.disposal
+    - essentials.signs.break.enchant
+    - essentials.signs.break.free
+    - essentials.signs.break.gamemode
+    - essentials.signs.break.heal
+    - essentials.signs.break.info
+    - essentials.signs.break.kit
+    - essentials.signs.break.mail
+    - essentials.signs.break.protection
+    - essentials.signs.break.repair
+    - essentials.signs.break.sell
+    - essentials.signs.break.spawnmob
+    - essentials.signs.break.time
+    - essentials.signs.break.trade
+    - essentials.signs.break.warp
+    - essentials.signs.break.weather
+    - essentials.signs.color
+    - essentials.signs.create.balance
+    - essentials.signs.create.disposal
+    - essentials.signs.create.info
+    - essentials.signs.create.kit
+    - essentials.signs.create.mail
+    - essentials.signs.create.protection
+    - essentials.signs.create.repair
+    - essentials.signs.create.spawnmob
+    - essentials.signs.create.time
+    - essentials.signs.create.trade
+    - essentials.signs.create.warp
+    - essentials.signs.create.weather
+    - essentials.signs.format
+    - essentials.signs.magic
+    - essentials.signs.protection.override
     - adminfun.*
     - plotguardian.*
     - buttonteleport.*
@@ -265,44 +346,71 @@ groups:
     inheritance:
     - Policer
   HeadMod:
-    prefix: '&1[&6Head Mod&1] '
+    prefix: '&1&o&l[&6&oHead-Mod&1&o&l] '
     options:
       rank: '500'
     permissions:
+    - essentials.god
+    - essentials.god.others
+    - essentials.god.pvp
     - essentials.give.*
-    - essentials.item.*
+    - essentials.give.item-all
+    - essentials.item
+    - essentials.itemspawn.exempt
+    - essentials.itemspawn.item-all
+    - essentials.itemspawn.*
     - essentials.back.ondeath
-    - essentials.tptoggle.*
+    - essentials.tptoggle
+    - essentials.tptoggle.others
+    - essentials.gamemode
     - mobarena.admin
     - worldedit.*
+    - worldguard.*
     - essentials.nick.others
-    - essentials.gamemode
     inheritance:
-    - Mod
+    - Moder
   Dev:
-    prefix: '&6[&7Dev&6] '
+    prefix: '&6[&7Dev&6] &7'
     options:
       rank: '450'
     permissions:
+    - vault.admin
     - mcmmo.tools.updatecheck
     - chestkeeper.updates
+    - permissions.*
     inheritance:
     - HeadMod
   HeadDev:
-    prefix: '&6[&8Head Dev&6] '
+    prefix: '&e[&2Head Dev&e] &2'
     options:
       rank: '400'
     inheritance:
     - Dev
   Admin:
-    prefix: '&6[&4Admin&6] '
+    prefix: '&1[&7Admin&1] &7'
     options:
       rank: '350'
     permissions:
+    - automessage.commands.reload
+    - automessage.commands.add
+    - automessage.commands.edit
+    - automessage.commands.remove
+    - automessage.commands.enabled
+    - automessage.commands.interval
+    - automessage.commands.random
+    - automessage.commands.prefix
+    - automessage.commands.broadcast
+    - automessage.commands.list
+    - rtp.admin
+    - essentials.signs.create.buy
+    - essentials.signs.create.enchant
+    - essentials.signs.create.free
+    - essentials.signs.create.gamemode
+    - essentials.signs.create.sell
+    - essentials.signs.create.heal
+    - nocheatplus.*
     - taien.th.admin
-    - colors.chat
     - essentials.gamemode.others
-    - essentials.banip.*
     - lwc.admin
     - chestkeeper.use.anyone
     - chestkeeper.sign.upgrade
@@ -324,52 +432,80 @@ groups:
     - towny.wild.*
     - towny.cheat.bypass
     - permissions.*
-    - essentials.exp.*
-    - essentials.feed.*
-    - essentials.fly.*
+    - essentials.exp
+    - essentials.exp.give
+    - essentials.exp.set
+    - essentials.exp.others
+    - essentials.feed
+    - essentials.feed.others
+    - essentials.fly
+    - essentials.fly.others
     - essentials.heal
     - essentials.more
     - essentials.ptime
-    - essentials.speed.*
-    - essentials.unlimited.*
+    - essentials.speed
+    - essentials.speed.bypass
+    - essentials.speed.others
+    - essentials.unlimited
+    - essentials.unlimited.item-all
+    - essentials.unlimited.others
+    - essentials.unlimited.item-bucket
     - essentials.getpos.others
-    - essentials.togglejail.*
-    - limitedcreative.*
-    - limitedcreative.keepinventory
-    - limitedcreative.nolimit.chest
-    - limitedcreative.nolimit.drop
-    - limitedcreative.nolimit.pickup
+    - essentials.togglejail.offline
     - bukkit.command.plugin
     - lottery.admin.*
     - lottery.sign.*
     - arena.admin
     - announcer.admin
     - ultimatearena.admin
-    - essentials.speed
-    - essentials.keepxp
+    - essentials.seen.extra
     inheritance:
     - HeadDev
   HeadAdmin:
-    prefix: '&6[&4head Admin&6] '
+    prefix: '&4[&6Head Admin&4] &6'
     options:
       rank: '300'
     permissions:
-    - essentials.*
+    - essentials.exp.give.others
+    - essentials.exp.set.others
+    - essentials.kick.kickall
+    - essentials.ptime.others
     - mobarena.setup
-    - spawner.give.others.*
     inheritance:
     - Admin
-#coowner - owner ranks
   CoOwner:
-    prefix: '&9[&3Co Owner&9] '
+    prefix: '&3[&9Co Owner&3] &9'
     optoins:
       rank: '250'
     permissions:
-    - essentials.unbanip
-    - essentials.powertool.*
     - '*'
     inheritance:
     - HeadAdmin
+  Jailed:
+    prefix: '&0[Jailed] '
+    permissions:
+    - essentials.chat
+    options:
+      rank: '240'
+  PlayerMaker:
+    prefix: '&4[&6Player&4Maker&6] &c'
+    permissions:
+    - essentials.gamemode
+    - worldedit.*
+    - worldguard.*
+    - modifyworld.*
+    - essentials.setwarp
+    - essentials.delwarp
+    - essentials.back.ondeath
+    - essentials.give
+    - essentials.clearinventory
+    - essentials.item
+    - essentials.itemdb
+    - essentials.sethome.multiple.unlimited
+    inheritance:
+    - Watchman
+    options:
+      rank: '230'
   Owner:
     prefix: '&9[&3Owner&9]&0 '
     permissions:
