@@ -1,19 +1,22 @@
 Needs:
-GuildMaster
-/potion
-Virtual chest
-golden opple
-Premium
-Gets /kit crafting table not /workbench
-Elite
-Add /d on the website / in server???
-Get rid of /spawnmob
-VIP
-Get rid of /worth
-Get rid of explosive arrows on this rank
-Remove kit food
-Why where there 2 elite? DID I look at the wrong thing? Elite
-Change pigzombie to Zombie
-Ocelot to
+
+GuildMaster:
+  /potion
+  Virtual chest
+  golden opple
+
+Premium:
+//fixed
+Elite:
+  Add /d on the website / in server???
+  Get rid of /spawnmob
+  Change pigzombie to Zombie
+  Ocelot to
+
+VIP:
+  Get rid of /worth
+  Get rid of explosive arrows on this rank
+  Remove kit food
+
 
 (tj wrote that)
